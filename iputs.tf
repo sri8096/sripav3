@@ -22,11 +22,12 @@ variable "subnet_details" {
     type = object({
         names=list(string)
     })
-}
        default = {
      names =  [ "web", "app", "db" ]
+       }
 }
 variable "runningversion" {
     type = string
     default = "1.0"
 }
+ 
