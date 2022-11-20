@@ -22,6 +22,7 @@ variable "subnet_details" {
     type = object({
         names=list(string)
     })
+}
        default = {
      names =  [ "web", "app", "db" ]
 }
